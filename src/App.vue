@@ -1,6 +1,6 @@
 <template>
+  <VendreHeader title="Anställda" :logoSrc="logoSrc" />
   <div id="list-container">
-    <VendreHeader title="Anställda" :logoSrc="logoSrc" />
     <UserList />
   </div>
 </template>
