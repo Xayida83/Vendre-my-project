@@ -1,0 +1,47 @@
+.image-text {
+  @include flex-center;
+  flex-flow: row wrap;
+
+  .image {
+    max-width: 40%;
+    @include flex-center;
+
+    img {
+      max-width: 60%;
+      height: auto;
+      border-radius: 50%;
+    }
+  }
+
+  .title {
+    @include flex-center;
+    flex-direction: column;    
+    text-align: center;
+    width: 50rem;
+    h1 {
+      font-size: 3rem;
+      color: $font-color;
+    }
+    .subtitle {
+      font-size: 1.5rem;
+      color: $font-color;
+      margin-top: 10px;
+      max-width: 98%;
+    }
+  }
+}
+// @media #{$mobile} {
+//   .image-container {
+//     display: none; 
+//   }
+
+//   .title {
+//     text-align: center;
+//     h1 {
+//       font-size: 1.5rem;
+//     }
+//     .subtitle {
+//       font-size: 1rem;
+//     }
+//   }
+// }

@@ -1,7 +1,30 @@
 <template>
   <header class="vendre-header">
     <VendreLogo :logoSrc="logoSrc" />
-    <h1 class="title">{{ title }}</h1>
+    <nav class="top-menu">
+      <div class="row">
+        <ul class="inline-list">
+          <li>
+            <div class="header-links-position">
+              <a href="https://vendre.se/produkt/" class="svg-icon top-menu-icon">Produkt</a>
+            </div>
+          </li>
+          <li>
+              <div class="header-links-position">
+                <a href="https://vendre.se/partners/" class="svg-icon top-menu-icon">Partners</a>
+              </div>
+            </li>
+            <li><a href="https://vendre.se/priser/">Priser</a></li>
+            <li><a href="https://vendre.se/referenser/">Referenser</a></li>
+            <li><a href="https://vendre.se/kundcase/">Kundcase</a></li>
+            <li>
+              <div class="header-links-position">
+                <a href="https://vendre.se/gallery.php?id=457" class="svg-icon top-menu-icon">Kunskap</a>
+              </div>
+            </li>
+        </ul>
+      </div>
+    </nav>
   </header>
 </template>
 
@@ -26,13 +49,9 @@ export default {
 };
 </script>
 
-<style scoped>
-.header {
-  text-align: center;
-  margin-bottom: 2em;
-}
-.title {
-  font-size: 2em;
-  color: #2c3e50;
-}
+<style scoped lang="scss">
+@import '@/styles/variables';
+@import '@/styles/mixins';
+@import '@/styles/nav-style';
+
 </style>

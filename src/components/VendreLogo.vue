@@ -18,13 +18,13 @@ export default {
 
 <style scoped>
 .logo-container {
+  position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+  height: 48px;
+  width: 170px;
 }
-.logo {
-  max-width: 100%;
-  height: auto;
+img {
+  height: 48px;
+  width: auto;
 }
 </style>

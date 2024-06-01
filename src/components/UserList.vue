@@ -55,7 +55,9 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import '@/styles/variables';
+
 .user-list {
   display: flex;
   flex-flow: row wrap;
@@ -72,12 +74,12 @@ export default {
   padding: 0.5em 1em;
   cursor: pointer;
   border: none;
-  background-color: #007bff;
-  color: white;
+  background-color: $primary-color;
+  color: $font-color;
   border-radius: 4px;
 }
 .pagination button:disabled {
-  background-color: #cccccc;
+  background-color: $secondary-color;
   cursor: not-allowed;
 }
 .pagination span {

@@ -1,0 +1,38 @@
+.vendre-header {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 100%;
+  margin: 0 40px;
+  .top-menu {
+    @include flex-center;
+    flex-flow: row wrap;
+    width: 78vw;
+    
+    .row {
+      width: 40%;    
+      .inline-list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        color: $font-color;
+        
+        li{
+          float: none;
+          position: relative;
+          margin: 0;
+          display: inline-block;
+      
+          a{              
+            text-decoration: none;
+            color: $font-color;
+            font-size: 14px;
+            font-weight: 700;
+            font-family: $font-family;
+          }
+          
+        }
+      }
+    }  
+  }
+}
