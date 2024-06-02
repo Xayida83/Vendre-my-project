@@ -1,7 +1,10 @@
 <template>
   <header class="vendre-header">
     <VendreLogo :logoSrc="logoSrc" />
-    <nav class="top-menu">
+    <button class="hamburger" @click="toggleMenu">
+      <span class="hamburger-icon"></span>
+    </button>
+    <nav class="top-menu" :class="{ 'menu-open': isMenuOpen }">
       <div class="row">
         <ul class="inline-list">
           <li>
@@ -10,18 +13,18 @@
             </div>
           </li>
           <li>
-              <div class="header-links-position">
-                <a href="https://vendre.se/partners/" class="svg-icon top-menu-icon">Partners</a>
-              </div>
-            </li>
-            <li><a href="https://vendre.se/priser/">Priser</a></li>
-            <li><a href="https://vendre.se/referenser/">Referenser</a></li>
-            <li><a href="https://vendre.se/kundcase/">Kundcase</a></li>
-            <li>
-              <div class="header-links-position">
-                <a href="https://vendre.se/gallery.php?id=457" class="svg-icon top-menu-icon">Kunskap</a>
-              </div>
-            </li>
+            <div class="header-links-position">
+              <a href="https://vendre.se/partners/" class="svg-icon top-menu-icon">Partners</a>
+            </div>
+          </li>
+          <li><a href="https://vendre.se/priser/">Priser</a></li>
+          <li><a href="https://vendre.se/referenser/">Referenser</a></li>
+          <li><a href="https://vendre.se/kundcase/">Kundcase</a></li>
+          <li>
+            <div class="header-links-position">
+              <a href="https://vendre.se/gallery.php?id=457" class="svg-icon top-menu-icon">Kunskap</a>
+            </div>
+          </li>
         </ul>
       </div>
     </nav>
@@ -37,13 +40,19 @@ export default {
     VendreLogo,
   },
   props: {
-    title: {
-      type: String,
-      required: true,
-    },
     logoSrc: {
       type: String,
       required: true,
+    },
+  },
+  data() {
+    return {
+      isMenuOpen: false,
+    };
+  },
+  methods: {
+    toggleMenu() {
+      this.isMenuOpen = !this.isMenuOpen;
     },
   },
 };
