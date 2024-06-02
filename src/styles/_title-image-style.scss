@@ -21,27 +21,34 @@
     h1 {
       font-size: 3rem;
       color: $font-color;
+      font-family: $font-family;
+      font-weight: 700;
     }
     .subtitle {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
+      line-height: 1.7;     
+      font-family: $font-family;
+      margin: 0 1em;
       color: $font-color;
-      margin-top: 10px;
       max-width: 98%;
     }
   }
 }
-// @media #{$mobile} {
-//   .image-container {
-//     display: none; 
-//   }
-
-//   .title {
-//     text-align: center;
-//     h1 {
-//       font-size: 1.5rem;
-//     }
-//     .subtitle {
-//       font-size: 1rem;
-//     }
-//   }
-// }
+@media (max-width: 768px) {
+  
+  .image-text{
+    .image {
+    display: none; 
+    }
+    .title {
+      text-align: center;
+      h1 {
+        font-size: 2rem;
+      }
+      .subtitle {
+        font-size: 1rem;
+      }
+    }
+  }
+  
+}
