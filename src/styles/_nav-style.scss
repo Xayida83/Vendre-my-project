@@ -1,6 +1,5 @@
 .vendre-header {
-  display: flex;
-  align-items: center;
+  @include flex-center;
   justify-content: space-between;
   padding: 1rem;
   
@@ -65,9 +64,6 @@ a {
   display: flex;
 }
 
-.inline-list li {
-  margin: 0 15px;
-}
 
 .header-links-position {
   position: relative;
@@ -79,8 +75,8 @@ a {
   color: inherit;
 }
 
-/* Media Query for Mobile View */
-@media (max-width: 768px) {
+/* Media Query for smaller View */
+@media (max-width: 900px) {
   .hamburger {
     display: block;
   }
@@ -88,40 +84,17 @@ a {
   .top-menu {
     display: none;
     flex-direction: column;
-    width: 100%;
+    // width: 100%;
     position: absolute;
     top: 50px;
     right: 37px;
     padding: 1em;
     width: fit-content;
-    background-color: white;
+    background-color: $secondary-color;
     z-index: 1;
   }
 
   .top-menu.menu-open {
     display: flex;
-  }
-
-  .inline-list {
-    flex-direction: column;
-  }
-
-  .inline-list li {
-    margin: 10px 0;
-  }
-}
-
-/* Media Query for Desktop View */
-@media (min-width: 1000px) {
-  .top-menu {
-    display: flex !important;
-  }
-
-  .inline-list {
-    flex-direction: row;
-  }
-
-  .inline-list li {
-    margin: 0 15px;
   }
 }

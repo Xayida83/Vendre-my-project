@@ -67,7 +67,7 @@ export default {
 .pagination {
   display: flex;
   justify-content: center;
-  margin-top: 1em;
+  margin: 1em;
 }
 .pagination button {
   margin: 0 1em;

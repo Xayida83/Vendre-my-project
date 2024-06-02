@@ -17,7 +17,7 @@
     @include flex-center;
     flex-direction: column;    
     text-align: center;
-    width: 50rem;
+    width: 40rem;
     h1 {
       font-size: 3rem;
       color: $font-color;
@@ -35,7 +35,7 @@
     }
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   
   .image-text{
     .image {
