@@ -4,7 +4,7 @@
       <img :src="user.avatar" alt="avatar" />
     </div>
     <h3>{{ user.first_name }} {{ user.last_name }}</h3>
-    <a :href="'mailto:' + user.email">Contact</a>
+    <a :href="'mailto:' + user.email">Kontakta</a>
   </div>
 </template>
 
