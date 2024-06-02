@@ -1,6 +1,6 @@
 # Vendre Employee Showcase
 ## Beskrivning
-Detta projekt är ett kodtest och den första gången jag provar Vue.js. Projektet är en enkel webbsida för att visa upp anställda på Vendre. Sidan inkluderar en navigeringsmeny som blir en hamburgermeny på mindre skärmar och en komponent för att visa en titel med en tillhörande bild.
+Detta projekt är ett kodtest och första gången jag provar Vue.js. Projektet är en enkel webbsida för att visa upp anställda på Vendre. Sidan inkluderar en navigeringsmeny som blir en hamburgermeny på mindre skärmar och en komponent för att visa en titel med en tillhörande bild.
 ### Teknologier
 - Vue.js
 - Sass
@@ -47,7 +47,7 @@ my-project/
 Projektet använder SASS för att hantera stilar. Följande mixins och variabler används för att hålla koden DRY och modulär, det var planen:
 
 **Mixins**
-src/styles/mixins.scss innehåller mixins för att centrera element och ska användas för andra gemensama stilar:
+`src/styles/mixins.scss` innehåller mixins för att centrera element och ska användas för andra gemensama stilar:
 
 Detta projekt har varit ett utmärkt sätt att lära sig grunderna i Vue.js.
 
