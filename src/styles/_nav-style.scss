@@ -84,7 +84,7 @@ a {
   .top-menu {
     display: none;
     flex-direction: column;
-    // width: 100%;
+    //width: 100%;
     position: absolute;
     top: 50px;
     right: 37px;
@@ -96,5 +96,9 @@ a {
 
   .top-menu.menu-open {
     display: flex;
+    .inline-list {
+      flex-direction: column;
+      gap: 1em;
+    }
   }
 }
